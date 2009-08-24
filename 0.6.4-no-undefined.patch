@@ -1,0 +1,11 @@
+--- origsrc/gssdp-0.6.4/libgssdp/Makefile.am	2009-01-06 08:44:15.000000000 -0600
++++ src/gssdp-0.6.4/libgssdp/Makefile.am	2009-04-27 11:16:10.670250000 -0500
+@@ -20,7 +20,7 @@ gssdp-marshal.h: gssdp-marshal.list
+ 
+ BUILT_SOURCES = gssdp-marshal.c gssdp-marshal.h
+ 
+-libgssdp_1_0_la_LDFLAGS = -version-info $(LTVERSION)
++libgssdp_1_0_la_LDFLAGS = -version-info $(LTVERSION) -no-undefined
+ 
+ libgssdp_1_0_la_SOURCES = gssdp-client.c		\
+ 			  gssdp-client-private.h	\

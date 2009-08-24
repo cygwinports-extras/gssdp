@@ -1,0 +1,6 @@
+category: Gnome Net
+requires: libgcc1 libglib2.0_0 libsoup2.4_1
+external-source: gssdp
+sdesc: "GObject SSDP library (runtime)"
+ldesc: "A GObject-based API for handling resource discovery and 
+announcement over SSDP."

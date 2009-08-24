@@ -1,0 +1,97 @@
+gssdp
+------------------------------------------
+A GObject-based API for handling resource discovery and announcement 
+over SSDP.
+
+Runtime requirements:
+  cygwin-1.7.0-60
+  libgcc1-4.3.2-2
+  libglade2.0_0-2.6.4-1
+  libglib2.0_0-2.20.4-1
+  libgtk2.0_0-2.16.5-1
+  libsoup2.4_1-2.26.3-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.9-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-14
+  make-3.81-2
+  pkg-config-0.23b-10
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.gupnp.org/
+
+Canonical download:
+  http://www.gupnp.org/sources/gssdp/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gssdp-0.6.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gssdp-0.6.4-X.cygport all
+
+This will create:
+  /usr/src/gssdp-0.6.4-X-src.tar.bz2
+  /usr/src/gssdp-0.6.4-X.tar.bz2
+  /usr/src/libgssdp1.0-devel-0.6.4-X.tar.bz2
+  /usr/src/libgssdp1.0_1-0.6.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+(gssdp)
+  /usr/bin/gssdp-device-sniffer.exe
+  /usr/share/doc/gssdp/AUTHORS
+  /usr/share/doc/gssdp/COPYING
+  /usr/share/doc/gssdp/ChangeLog
+  /usr/share/doc/gssdp/NEWS
+  /usr/share/doc/gssdp/README
+  /usr/share/gssdp/gssdp-device-sniffer.glade
+
+(libgssdp1.0_1)
+  /usr/bin/cyggssdp-1.0-1.dll
+
+(libgssdp1.0-devel)
+  /usr/include/gssdp-1.0/libgssdp/gssdp-client.h
+  /usr/include/gssdp-1.0/libgssdp/gssdp-error.h
+  /usr/include/gssdp-1.0/libgssdp/gssdp-resource-browser.h
+  /usr/include/gssdp-1.0/libgssdp/gssdp-resource-group.h
+  /usr/include/gssdp-1.0/libgssdp/gssdp.h
+  /usr/lib/libgssdp-1.0.dll.a
+  /usr/lib/libgssdp-1.0.la
+  /usr/lib/pkgconfig/gssdp-1.0.pc
+  /usr/share/gtk-doc/html/gssdp/GSSDPClient.html
+  /usr/share/gtk-doc/html/gssdp/GSSDPResourceBrowser.html
+  /usr/share/gtk-doc/html/gssdp/GSSDPResourceGroup.html
+  /usr/share/gtk-doc/html/gssdp/ch01.html
+  /usr/share/gtk-doc/html/gssdp/gssdp-Error-codes.html
+  /usr/share/gtk-doc/html/gssdp/gssdp.devhelp
+  /usr/share/gtk-doc/html/gssdp/gssdp.devhelp2
+  /usr/share/gtk-doc/html/gssdp/home.png
+  /usr/share/gtk-doc/html/gssdp/index.html
+  /usr/share/gtk-doc/html/gssdp/index.sgml
+  /usr/share/gtk-doc/html/gssdp/left.png
+  /usr/share/gtk-doc/html/gssdp/right.png
+  /usr/share/gtk-doc/html/gssdp/style.css
+  /usr/share/gtk-doc/html/gssdp/up.png
+
+------------------
+
+Port Notes:
+
+----- version 0.6.4-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
