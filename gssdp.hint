@@ -1,5 +1,0 @@
-category: Gnome Net
-requires: libgcc1 libglade2.0_0 libglib2.0_0 libgssdp1.0_1 libgtk2.0_0 libsoup2.4_1
-sdesc: "GObject SSDP resource browser"
-ldesc: "A GObject-based API for handling resource discovery and 
-announcement over SSDP."

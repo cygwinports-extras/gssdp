@@ -1,0 +1,19 @@
+inherit gnome2
+
+NAME="gssdp"
+VERSION=0.6.4
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="GObject SSDP library (runtime)"
+DESCRIPTION="A GObject-based API for handling resource discovery and
+announcement over SSDP."
+HOMEPAGE="http://www.gupnp.org/"
+SRC_URI="http://www.gupnp.org/sources/gssdp/gssdp-${VERSION}.tar.gz"
+PATCH_URI="0.6.4-no-undefined.patch"
+
+PKG_NAMES="${NAME} lib${NAME}1.0_1 lib${NAME}1.0-devel"
+gssdp_CATEGORY="Net"
+gssdp_SUMMARY="SSDP resource browser"
+gssdp_CONTENTS="usr/bin/*.exe usr/share/doc/ usr/share/${NAME}/"
+libgssdp1_0_1_CONTENTS="usr/bin/cyggssdp-1.0-1.dll"
+libgssdp1_0_devel_CONTENTS="usr/include/ usr/lib/ usr/share/gtk-doc/"
